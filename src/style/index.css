@@ -1,0 +1,200 @@
+
+/*  CONFIGS DO BACKGROUND VIDEO */
+.container-app {
+   display: flex;
+
+    height: 100vh;
+    width: 100vw;
+   
+    overflow: hidden;
+}
+
+.container-app video {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+    
+    height: 100vh;
+    width: 100%;
+}
+
+/* CONTEUDO PRINCIPAL E OPACIDADE */
+.container-app .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER */
+.content header {
+    display: flex;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 900px;
+
+    padding: 20px 5px;
+
+    margin: 0 auto;
+}
+
+.logo-img {
+    width: 200px;
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 580px;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+.menu-close {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    height: 100px;
+    color: #fff;
+}
+
+footer img {
+    width: 30px;
+}
+
+footer img:hover {
+    cursor: pointer;
+}
+
+/* =========================================================== */
+@media (max-width: 768px) {
+    .container-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        height: 100px;
+        width: 100%;
+    
+        padding: 20px;
+    
+        margin: 0 auto;
+    }
+    
+    .logo-img {
+        width: 150px;
+    }
+
+    .container-nav {
+        width: 50px;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        width: 50px;
+    }
+
+    .menu-close {
+        display: none;
+        width: 30px;
+        
+    }
+
+    .navigation {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 100vw;
+
+        left: 0;
+        top: 120px;
+
+        padding: 20px 0;
+
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+}
+
+/* =========================================================== */
+@media (max-width: 450px) {
+    .container-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        width: 100%;
+
+        padding: 20px;
+    }
+
+    .container-nav {
+        width: 50px;
+    }    
+
+    .logo-img {
+        width: 150px;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        width: 50px;
+    }
+
+    .menu-close {
+        display: none;
+        width: 30px;
+    }
+
+    .navigation {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 100vw;
+
+        left: 0;
+        top: 120px;
+
+        padding: 20px 0;
+
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+}

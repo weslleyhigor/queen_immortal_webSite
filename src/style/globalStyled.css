@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    /* colors */
+    --color-yellow:  #f4df1a;
+
+    /* Fonts */
+    --font1: 'Inter', sans-serif;
+    --font2: 'Andika', sans-serif;
+
+    /* Font Weight */
+    --fontWight1: 400; 
+    --fontWight2: 600;
+    --fontWight3: 700;
+    
+}
+
+body {
+    font-family: var(--FontInter);
+}
+
+a {
+    text-decoration: none;
+    color:  var(--color-yellow);
+
+    font-size: 20px; 
+    font-family: var(--font2);
+    font-weight: (var(--fontWight2));  
+    font-style: italic;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
