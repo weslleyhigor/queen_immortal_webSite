@@ -12,10 +12,12 @@
     <title>Queen Immortal</title>
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="./src/assets/audio/background-audio.mp3" type="audio/mp3">
-    </audio>
     <div class="opacity">
+        <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+        <audio autoplay loop>
+            <source src="./src/assets/audio/background-audio.mp3" type="audio/mp3">
+        </audio>
+
         <header>
             <div class="container-header">
                 <img class="logo-img" src="./src/assets/img/logo-queen-immortal.png" alt="Logo Queen Immortal">
@@ -23,12 +25,13 @@
                     <img class="menu-hamburguer" src="./src/assets/img/menu-hamburguer.png">
                     <img class="menu-close" src="./src/assets/img/close.png">
                     <nav class="navigation">
-                        <a href="#Biografia">Biografia</a>
-                        <a href="#Agenda">Agenda</a>
-                        <a href="#Fotos">Fotos</a>
-                        <a href="#CentralDeFas">Central de Fãs</a>
-                        <a href="#Contato">Contato</a>
-                        <a href="#Loja">Loja</a>
+                        <a href="./index.html">Home</a>
+                        <a href="./src/pages/manutencao.html">Biografia</a>
+                        <a href="./src/pages/manutencao.html">Agenda</a>
+                        <a href="./src/pages/manutencao.html">Fotos</a>
+                        <a href="./src/pages/manutencao.html">Central de Fãs</a>
+                        <a href="./src/pages/manutencao.html">Contato</a>
+                        <a href="./src/pages/manutencao.html">Loja</a>
                     </nav>
                 </section>
             </div>
@@ -41,7 +44,7 @@
         </footer>
     </div>
 
-    <script src="src/javascript/script.js"></script>
+    <script src="src/javascript/menu.js"></script>
     
 </body>
 </html>

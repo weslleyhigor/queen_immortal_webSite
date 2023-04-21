@@ -1,0 +1,47 @@
+body {
+    background-image: url('../assets/img/pagina-em-manutencao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+    font-family: var(--font1);
+}
+
+main h1 {
+    font-size: 4rem;
+    font-weight: var(--fontWight3);
+    
+    text-align: center;
+    line-height: 40px;
+    padding: 30px 30px;
+    border-radius: 20px;
+
+    /* color: var(--color-yellow); */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================================================== */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    
+}
